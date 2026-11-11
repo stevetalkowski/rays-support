@@ -12,3 +12,16 @@ a { color: var(--accent); }
 ul { padding-left: 22px; }
 footer { color: var(--muted); font-size: 14px; margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); }
 nav a { margin-right: 16px; }
+
+/* Top bar: back to the RAYS home page (Steve 2026-11-11). */
+nav.top { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px 16px; margin-bottom: 28px; }
+nav.top .home { display: inline-flex; align-items: center; gap: 8px; color: var(--fg); text-decoration: none; font-weight: 600; }
+nav.top .home:hover { color: var(--accent); }
+nav.top .home img { width: 28px; height: 28px; border-radius: 7px; }
+nav.top .links a { margin: 0 0 0 16px; }
+nav.top .links a:first-child { margin-left: 0; }
+/* Common questions: the question in orange, the answer beneath, each in its own card. */
+:root { --orange: #ff8a1f; }
+.qa { background: var(--card); border: 1px solid var(--line); border-left: 3px solid var(--orange); border-radius: 12px; padding: 14px 18px; margin: 12px 0; }
+.qa .q { color: var(--orange); font-size: 18px; margin: 0 0 6px; line-height: 1.35; }
+.qa .a { margin: 0; color: #d7dce6; }

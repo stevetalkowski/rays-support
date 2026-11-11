@@ -7,11 +7,14 @@
 <meta name="description" content="Help and contact for RAYS, the path tracer for iPhone.">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#05070c">
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 <main>
-  <nav><a href="index.html">Support</a><a href="privacy.html">Privacy Policy</a></nav>
+  <nav class="top">
+    <a class="home" href="https://stevetalkowski.github.io/rays/"><img src="https://stevetalkowski.github.io/rays/img/icon.png" alt="">&larr; RAYS home</a>
+    <span class="links"><a href="index.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="https://apps.apple.com/app/id6831028418">App Store</a></span>
+  </nav>
   <h1>RAYS</h1>
   <p class="sub">Import, Light and Render: a real path tracer for iPhone.</p>
 
@@ -29,14 +32,32 @@
   </ul>
 
   <h2>Common questions</h2>
-  <p><strong>Which iPhones can render?</strong> Rendering needs hardware ray tracing: iPhone 15 Pro, iPhone 16 or later. On other iPhones RAYS works in Preview only (open, light, arrange, Preview Effects, snapshots).</p>
-  <p><strong>My .gltf opened without textures.</strong> A .gltf often keeps its textures in separate files, and iOS only lets RAYS read the one file you pick. Export a <strong>.glb</strong> instead: it carries everything in one file.</p>
-  <p><strong>My OBJ's metal parts look grey.</strong> The OBJ material format has no metal setting. Use glTF / GLB or USDZ for metal.</p>
-  <p><strong>My saved render looks duller on my computer.</strong> HDR photos show their full range only on HDR screens. Save as <strong>Photo (PNG)</strong>, the default, for an image that looks the same everywhere.</p>
-  <p><strong>Where are my files?</strong> Files › On My iPhone › RAYS: <em>Scenes</em> for saved scenes, <em>Renders</em> for saved images. Renders also go to Photos.</p>
-  <p><strong>Does RAYS change my model files?</strong> Never. RAYS only reads them; saving writes a new scene file.</p>
+  <div class="qa">
+    <h3 class="q">Which iPhones can render?</h3>
+    <p class="a">Rendering needs hardware ray tracing: iPhone 15 Pro, iPhone 16 or later. On other iPhones RAYS works in Preview only (open, light, arrange, Preview Effects, snapshots).</p>
+  </div>
+  <div class="qa">
+    <h3 class="q">My .gltf opened without textures.</h3>
+    <p class="a">A .gltf often keeps its textures in separate files, and iOS only lets RAYS read the one file you pick. Export a <strong>.glb</strong> instead: it carries everything in one file.</p>
+  </div>
+  <div class="qa">
+    <h3 class="q">My OBJ's metal parts look grey.</h3>
+    <p class="a">The OBJ material format has no metal setting. Use glTF / GLB or USDZ for metal.</p>
+  </div>
+  <div class="qa">
+    <h3 class="q">My saved render looks duller on my computer.</h3>
+    <p class="a">HDR photos show their full range only on HDR screens. Save as <strong>Photo (PNG)</strong>, the default, for an image that looks the same everywhere.</p>
+  </div>
+  <div class="qa">
+    <h3 class="q">Where are my files?</h3>
+    <p class="a">Files › On My iPhone › RAYS: <em>Scenes</em> for saved scenes, <em>Renders</em> for saved images. Renders also go to Photos.</p>
+  </div>
+  <div class="qa">
+    <h3 class="q">Does RAYS change my model files?</h3>
+    <p class="a">Never. RAYS only reads them; saving writes a new scene file.</p>
+  </div>
 
-  <footer>© 2026 Sketchbot Studios, Inc. The Sketchbot character © Sketchbot Studios, Inc. All rights reserved.</footer>
+  <footer><a href="https://stevetalkowski.github.io/rays/">RAYS home</a> &middot; © 2026 Sketchbot Studios, Inc. The Sketchbot character © Sketchbot Studios, Inc. All rights reserved.</footer>
 </main>
 </body>
 </html>
